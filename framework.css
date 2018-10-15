@@ -84,9 +84,9 @@ footer h6 {
 
 /* GitHub: yusufcodes - changes made here */
 
-/* Media query - the following CSS will trigger when the page size is less than or equal to 480px. */
+/* Media query - the following CSS will trigger when the page size is less than or equal to 895px. */
 @media only screen 
-  and (max-device-width: 480px)
+  and (max-device-width: 895px)
 {
 
   /* Reducing the heading size */
