@@ -11,27 +11,29 @@ essentially a rounded box, similar to what is seen on Tumblr.
 Wrap the video inside a div with a class of vid. This will
 center the video.
 */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif+Caption');
 body {
-  font-family:"Open Sans", Roboto, sans-serif;
+  font-family: "Open Sans", Roboto, sans-serif;
   color: #203342;
   margin: 0 auto;
   padding: 20px;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  font-size: 1.5vw;
+  /* line-height: 5.5vw; */
   background-color: #203342;
 }
 
 main {
-	max-width: 65rem;
-	margin: 0 auto;
+  max-width: 65rem;
+  margin: 0 auto;
 }
 
 .background-needed {
-	background-color: rgba(254, 253, 255, 0.82);
-	padding: 10px;
-	border-radius: 10px;
-	margin: 5vh;
+  background-color: rgba(254, 253, 255, 0.82);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 2vw;
+  min-width: 100%;
 }
 
 header {
@@ -44,15 +46,21 @@ h1, h2, h3 {
   letter-spacing: 3px;
 }
 
-h1 {font-size: 98px;}
-h3 {font-size: 45px;}
+h1 {
+  font-size: 8.5vw;
+}
 
-nav {text-align: center;}
-nav a {color: #d1e4f4;}
-nav ul li {
-  list-style: none;
-  display: inline;
-  text-align: center;
+h3 {
+  font-size: 4.5vw;
+}
+
+p {
+  font-size: 3vw;
+}
+
+ul {
+  font-size: 2.5vw;
+  padding: 0 7vw;
 }
 
 a {
@@ -61,8 +69,32 @@ a {
 }
 
 a:hover {
-  padding: 2px;
-  border: 2px dashed #3a3a3a;
+  color: tomato;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 4vw;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 1vw;
+}
+
+nav a {
+  color: #d1e4f4;
+}
+
+iframe {
+  width:50vw;
+  height:30vw;
+}
+
+.dif {
+  color: #42cbf4;
 }
 
 img {
@@ -71,13 +103,19 @@ img {
   max-width: 50rem;
 }
 
-.vid {text-align: center;}
+.vid {
+  text-align: center;
+}
 
-.dif {color: #42cbf4;}
-
-footer {padding-top: 10%;}
-footer h6 {
-  line-height: 1;
+footer {
   text-align: center;
   color: #fafafa;
+}
+
+#flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
