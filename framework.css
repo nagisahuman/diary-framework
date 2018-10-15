@@ -82,12 +82,23 @@ footer h6 {
   color: #fafafa;
 }
 
+/* GitHub: yusufcodes - changes made here */
+
+/* Media query - the following CSS will trigger when the page size is less than or equal to 480px. */
 @media only screen 
   and (max-device-width: 480px)
 {
+
+  /* Reducing the heading size */
   header h1 
   {
     font-size: 55px;
+  }
+
+  /* Collapse the navigation menu */
+  nav ul li 
+  {
+    display: block;
   }
 
 
