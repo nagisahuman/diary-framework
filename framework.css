@@ -81,3 +81,10 @@ footer h6 {
   text-align: center;
   color: #fafafa;
 }
+
+@media screen and (max-width: 480px) {
+h1 {
+color: white;
+font-size: 40px;
+}
+}
